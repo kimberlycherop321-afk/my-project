@@ -134,7 +134,7 @@ public class Week3Launcher {
         Arrays.sort(sourceFiles, (first, second) -> first.getName().compareTo(second.getName()));
 
         List<String> compileCommand = new ArrayList<>();
-        compileCommand.add("javac");
+        compileCommand.add(javaTool("javac"));
         for (File sourceFile : sourceFiles) {
             compileCommand.add(sourceFile.getName());
         }
@@ -158,7 +158,7 @@ public class Week3Launcher {
         }
 
         new ProcessBuilder(
-                "java",
+                javaTool("java"),
                 "-cp",
                 activityFolder.getAbsolutePath(),
                 MAIN_CLASSES[selectedIndex])
@@ -166,6 +166,15 @@ public class Week3Launcher {
                 .inheritIO()
                 .start();
         return "Launched " + MAIN_CLASSES[selectedIndex] + ". Close its window when finished.";
+    }
+
+    private static String javaTool(String toolName) {
+        String suffix = System.getProperty("os.name").startsWith("Windows") ? ".exe" : "";
+        String executableName = toolName + suffix;
+        File executable = new File(
+                new File(System.getProperty("java.home"), "bin"),
+                executableName);
+        return executable.isFile() ? executable.getAbsolutePath() : executableName;
     }
 
     private static File findActivityRoot() {
