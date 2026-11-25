@@ -38,6 +38,7 @@ Use the CLI menu script to select and run individual weekly exercises:
     java -cp week05-advanced-swing Week5Launcher
 
 For the Week 2 activity breakdown and individual run commands, see the [Observer Pattern guide](./Week02-observer-pattern.md).
+For the Week 3 activity breakdown and individual run commands, see the [Swing GUI guide](./week03-swing-gui.md).
 
 **JavaFX Applications via Maven (Weeks 6–10):**
 
