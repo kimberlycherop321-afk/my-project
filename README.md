@@ -49,3 +49,5 @@ For the Week 5 advanced Swing activities and individual run commands, see the [A
     mvn -f week08-javafx-bindings/pom.xml javafx:run
     mvn -f week09-async-javafx/pom.xml javafx:run
     mvn -f UniversitySystem/pom.xml javafx:run
+
+For the Week 6 JavaFX foundations, activity details, and run commands, see the [JavaFX guide](./week06-javafx.md).
