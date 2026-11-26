@@ -1,13 +1,61 @@
-# Java Event-Driven Programming Portfolio
+Event-Driven Programming in Java
 
-Java exercises and desktop applications covering event-driven programming, Swing, JavaFX, and a university management capstone.
+A collection of hands-on activities, guides, and Java projects exploring Event-Driven Programming, the Observer Pattern, Swing, JavaFX, and a final Capstone application.
 
-## Requirements
+Requirements
 
-- JDK 17 or newer.
-- Maven 3.8 or newer for JavaFX projects.
-- A graphical desktop for GUI applications.
-- PostgreSQL connection settings for the University Management System.
+- Java JDK 11+ (JDK 17 or 21 recommended)
+- Maven (required for JavaFX projects in Weeks 6–10)
+
+Verify your setup:
+
+java -version
+javac -version
+mvn -version
+
+Quick Start
+
+1. Build the Entire Project
+
+Compile all Java files across the repository:
+
+Environment| Build| Clean Rebuild
+Git Bash / macOS / Linux| "./build"| "./build --clean"
+Windows CMD / PowerShell| ".\build.bat"| ".\build.bat --clean"
+npm (optional)| "npm run build"| "npm run build:clean"
+
+2. Launch the Interactive Menu
+
+The easiest way to access and run activities from any week is through the interactive menu.
+
+Git Bash / macOS / Linux:
+
+./scripts/run-all.sh
+
+Windows PowerShell:
+
+.\scripts\run-all.ps1
+
+Note for Git Bash users on Windows: Always use forward slashes ("./scripts/...") rather than backslashes (".\scripts\...").
+
+3. Launch a Visual Dashboard Directly
+
+For Weeks 2–5, you can launch each week's GUI dashboard directly using the following commands:
+
+java -cp Week02-observer-pattern Week2Launcher
+java -cp week03-swing-gui Week3Launcher
+java -cp week04-event-handling Week4Launcher
+java -cp week05-advanced-swing Week5Launcher
+
+For Weeks 6–10 (JavaFX + Maven):
+
+Run the following commands to launch each JavaFX application:
+
+mvn -f week06-javafx/pom.xml javafx:run
+mvn -f week07-javafx-events/pom.xml javafx:run
+mvn -f week08-javafx-bindings/pom.xml javafx:run
+mvn -f week09-async-javafx/pom.xml javafx:run
+mvn -f UniversitySystem/pom.xml javafx:run
 
 ## Weekly Modules
 
@@ -44,7 +92,10 @@ Each weekly script provides the following command-line options:
 - "--all" / "-All" — Execute all activities available for the selected week.
 - "--launcher" / "-Launcher" — Start the graphical launcher for Weeks 2–9.
 
-Week 10 Capstone: University Management System
+
+
+
+WEEK 10 Capstone: University Management System
 
 The final project is a JavaFX-based desktop application integrated with a PostgreSQL database hosted on Neon.
 
