@@ -1,2 +1,6 @@
 *.class
 .metals/
+.env
+.env.*
+!.env.example
+UniversitySystem/target/

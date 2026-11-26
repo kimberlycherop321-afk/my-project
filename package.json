@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "scripts": {
+    "start:university": "mvn -f UniversitySystem/pom.xml javafx:run",
+    "test:university": "mvn -f UniversitySystem/pom.xml package && node scripts/run-university-java.js com.university.UniversitySystemTest",
+    "seed:university": "mvn -f UniversitySystem/pom.xml package && node scripts/run-university-java.js com.university.SeedStudents"
+  }
+}

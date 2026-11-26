@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.university.StudentController"
+      spacing="14"
+      style="-fx-background-color: white; -fx-background-radius: 12;">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="Student Management" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    <Label text="Add, update, remove, sort, or search student records."/>
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <TextField fx:id="searchField" promptText="Search name, email, or program"
+                   HBox.hgrow="ALWAYS"/>
+        <Label fx:id="statusLabel" text="Preparing database..." wrapText="true"/>
+    </HBox>
+    <HBox spacing="20" VBox.vgrow="ALWAYS">
+        <VBox spacing="10" prefWidth="270">
+            <Label text="Student details" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+            <TextField fx:id="firstNameField" promptText="First name"/>
+            <TextField fx:id="lastNameField" promptText="Last name"/>
+            <TextField fx:id="emailField" promptText="Email address"/>
+            <ComboBox fx:id="programComboBox" promptText="Select program" maxWidth="Infinity"/>
+            <HBox spacing="8">
+                <Button fx:id="addButton" text="Add" onAction="#addStudent"/>
+                <Button fx:id="updateButton" text="Update" onAction="#updateStudent"/>
+            </HBox>
+            <HBox spacing="8">
+                <Button fx:id="deleteButton" text="Delete" onAction="#deleteStudent"/>
+                <Button fx:id="clearButton" text="Clear" onAction="#clearForm"/>
+            </HBox>
+        </VBox>
+        <TableView fx:id="studentTable" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="55"/>
+                <TableColumn fx:id="firstNameColumn" text="First name" prefWidth="115"/>
+                <TableColumn fx:id="lastNameColumn" text="Last name" prefWidth="115"/>
+                <TableColumn fx:id="emailColumn" text="Email" prefWidth="190"/>
+                <TableColumn fx:id="programColumn" text="Program" prefWidth="190"/>
+            </columns>
+        </TableView>
+    </HBox>
+</VBox>

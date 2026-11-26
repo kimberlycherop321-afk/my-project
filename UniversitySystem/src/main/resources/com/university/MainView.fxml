@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.university.MainController"
+            style="-fx-background-color: #f4f6fa;">
+    <left>
+        <VBox spacing="16" prefWidth="220"
+              style="-fx-background-color: #17324d; -fx-padding: 24;">
+            <Label text="CAMPUS" style="-fx-text-fill: white; -fx-font-size: 12px; -fx-font-weight: bold;"/>
+            <Label text="University System"
+                   style="-fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold;"/>
+            <Button text="Dashboard" maxWidth="Infinity" onAction="#showDashboard"/>
+            <Button text="Students" maxWidth="Infinity" onAction="#showStudents"/>
+        </VBox>
+    </left>
+    <center>
+        <StackPane fx:id="contentArea">
+            <padding>
+                <Insets top="22" right="22" bottom="22" left="22"/>
+            </padding>
+        </StackPane>
+    </center>
+</BorderPane>

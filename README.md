@@ -22,7 +22,6 @@ Build all Java source files across the repository:
 | :--- | :--- | :--- |
 | **Linux / macOS / Git Bash** | `./build` | `./build --clean` |
 | **Windows (CMD / PowerShell)** | `.\build.bat` | `.\build.bat --clean` |
-| **Node Scripts (Optional)** | `npm run build` | `npm run build:clean` |
 
 ### 2. Run the Interactive Launcher Menu
 Use the CLI menu script to select and run individual weekly exercises:
@@ -54,3 +53,4 @@ For the Week 6 JavaFX foundations, activity details, and run commands, see the [
 For the Week 7 JavaFX event-handling activities and run commands, see the [JavaFX events guide](./week07-javafx-events.md).
 For the Week 8 JavaFX properties and bindings activities, see the [Properties and Bindings guide](./week08-javafx-bindings.md).
 For the Week 9 JavaFX asynchronous programming activities, see the [Asynchronous Programming guide](./week09-async-javafx.md).
+For the Week 10 capstone database setup, application details, and test instructions, see the [University Management System guide](./week10-university-system.md).
