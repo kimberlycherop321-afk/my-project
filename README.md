@@ -8,9 +8,24 @@ Java activities and desktop projects covering event-driven programming, Swing, J
 - Maven for JavaFX projects (Weeks 6–10).
 - A graphical desktop environment for GUI applications.
 
-## Week 1 — Event-Driven Basics
+## Weekly Overview
 
-**Run:** Run individual Java exercises from the repository root; see the linked self-assessment and bug-fix notes.
+| Week | Topic | Project | Guide | Quick launch |
+| --- | --- | --- | --- | --- |
+| 1 | Event-driven basics and bug fixes | Week 1 files at repository root | [Bug fixes](./BugFixes.md) · [Self-assessment](./SelfAssessment.md) | Run individual Java exercises from the repository root |
+| 2 | Observer Pattern | [Week02-observer-pattern/](./Week02-observer-pattern/) | [Week 2 guide](./Week02-observer-pattern.md) | [Shell](./Week02-observer-pattern/scripts/run-week2.sh) · [PowerShell](./Week02-observer-pattern/scripts/run-week2.ps1) |
+| 3 | Swing GUIs and layouts | [week03-swing-gui/](./week03-swing-gui/) | [Week 3 guide](./week03-swing-gui.md) | [Shell](./week03-swing-gui/scripts/run-week3.sh) · [PowerShell](./week03-swing-gui/scripts/run-week3.ps1) |
+| 4 | Event handling in Swing | [week04-event-handling/](./week04-event-handling/) | [Week 4 guide](./week04-event-handling/week04-event-handling.md) | [Shell](./week04-event-handling/scripts/run-week4.sh) · [PowerShell](./week04-event-handling/scripts/run-week4.ps1) |
+| 5 | Advanced Swing components | [week05-advanced-swing/](./week05-advanced-swing/) | [Week 5 guide](./week05-advanced-swing/week05-advanced-swing.md) | [Shell](./week05-advanced-swing/scripts/run-week5.sh) · [PowerShell](./week05-advanced-swing/scripts/run-week5.ps1) |
+| 6 | Introduction to JavaFX | [week06-javafx/](./week06-javafx/) | [Week 6 guide](./week06-javafx.md) | `mvn -f week06-javafx/pom.xml javafx:run` · [Shell](./scripts/run-week6.sh) · [PowerShell](./scripts/run-week6.ps1) |
+| 7 | JavaFX event handling | [week07-javafx-events/](./week07-javafx-events/) | [Week 7 guide](./week07-javafx-events.md) | `mvn -f week07-javafx-events/pom.xml javafx:run` · [Shell](./scripts/run-week7.sh) · [PowerShell](./scripts/run-week7.ps1) |
+| 8 | JavaFX properties and bindings | [week08-javafx-bindings/](./week08-javafx-bindings/) | [Week 8 guide](./week08-javafx-bindings.md) | `mvn -f week08-javafx-bindings/pom.xml javafx:run` · [Shell](./scripts/run-week8.sh) · [PowerShell](./scripts/run-week8.ps1) |
+| 9 | Asynchronous programming in JavaFX | [week09-async-javafx/](./week09-async-javafx/) | [Week 9 guide](./week09-async-javafx.md) | `mvn -f week09-async-javafx/pom.xml javafx:run` · [Shell](./scripts/run-week9.sh) · [PowerShell](./scripts/run-week9.ps1) |
+| 10 | University Management System capstone | [UniversitySystem/](./UniversitySystem/) | [Week 10 guide](./week10-university-system.md) | `mvn -f UniversitySystem/pom.xml javafx:run` · [Shell](./scripts/run-university.sh) · [PowerShell](./scripts/run-university.ps1) |
+
+Use `.sh` scripts from Git Bash, Linux, or macOS and `.ps1` scripts from PowerShell. Run scripts from the repository root.
+
+## Week 1 — Event-Driven Basics
 
 <details>
 <summary>Show all files</summary>
@@ -28,8 +43,6 @@ Java activities and desktop projects covering event-driven programming, Swing, J
 </details>
 
 ## Week 2 — Observer Pattern
-
-**Run:** Use the guide listed below for run instructions and launch scripts.
 
 <details>
 <summary>Show all files</summary>
@@ -65,8 +78,6 @@ Java activities and desktop projects covering event-driven programming, Swing, J
 
 ## Week 3 — Swing GUIs and Layouts
 
-**Run:** Use the guide listed below for run instructions and launch scripts.
-
 <details>
 <summary>Show all files</summary>
 
@@ -88,8 +99,6 @@ Java activities and desktop projects covering event-driven programming, Swing, J
 </details>
 
 ## Week 4 — Event Handling in Swing
-
-**Run:** Use the project guide and scripts listed below.
 
 <details>
 <summary>Show all files</summary>
@@ -114,8 +123,6 @@ Java activities and desktop projects covering event-driven programming, Swing, J
 
 ## Week 5 — Advanced Swing Components
 
-**Run:** Use the project guide and scripts listed below.
-
 <details>
 <summary>Show all files</summary>
 
@@ -133,8 +140,6 @@ Java activities and desktop projects covering event-driven programming, Swing, J
 </details>
 
 ## Week 6 — Introduction to JavaFX
-
-**Run:** `mvn -f week06-javafx/pom.xml javafx:run`
 
 <details>
 <summary>Show all files</summary>
@@ -157,8 +162,6 @@ Java activities and desktop projects covering event-driven programming, Swing, J
 
 ## Week 7 — JavaFX Event Handling
 
-**Run:** `mvn -f week07-javafx-events/pom.xml javafx:run`
-
 <details>
 <summary>Show all files</summary>
 
@@ -178,8 +181,6 @@ Java activities and desktop projects covering event-driven programming, Swing, J
 </details>
 
 ## Week 8 — JavaFX Properties and Bindings
-
-**Run:** `mvn -f week08-javafx-bindings/pom.xml javafx:run`
 
 <details>
 <summary>Show all files</summary>
@@ -201,8 +202,6 @@ Java activities and desktop projects covering event-driven programming, Swing, J
 
 ## Week 9 — Asynchronous Programming in JavaFX
 
-**Run:** `mvn -f week09-async-javafx/pom.xml javafx:run`
-
 <details>
 <summary>Show all files</summary>
 
@@ -221,8 +220,6 @@ Java activities and desktop projects covering event-driven programming, Swing, J
 </details>
 
 ## Week 10 — University Management System
-
-**Run:** `mvn -f UniversitySystem/pom.xml javafx:run` or `npm run start:university`; configure `DATABASE_URL` first.
 
 <details>
 <summary>Show all files</summary>
