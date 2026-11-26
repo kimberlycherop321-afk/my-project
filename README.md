@@ -52,3 +52,4 @@ For the Week 5 advanced Swing activities and individual run commands, see the [A
 
 For the Week 6 JavaFX foundations, activity details, and run commands, see the [JavaFX guide](./week06-javafx.md).
 For the Week 7 JavaFX event-handling activities and run commands, see the [JavaFX events guide](./week07-javafx-events.md).
+For the Week 8 JavaFX properties and bindings activities, see the [Properties and Bindings guide](./week08-javafx-bindings.md).

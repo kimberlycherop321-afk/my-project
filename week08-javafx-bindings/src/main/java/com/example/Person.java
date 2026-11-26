@@ -1,0 +1,43 @@
+package com.example;
+
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+
+public class Person {
+    private final StringProperty name = new SimpleStringProperty(this, "name", "");
+    private final IntegerProperty age = new SimpleIntegerProperty(this, "age", 0);
+
+    public Person() {
+    }
+
+    public Person(String name, int age) {
+        setName(name);
+        setAge(age);
+    }
+
+    public String getName() {
+        return name.get();
+    }
+
+    public void setName(String name) {
+        this.name.set(name);
+    }
+
+    public StringProperty nameProperty() {
+        return name;
+    }
+
+    public int getAge() {
+        return age.get();
+    }
+
+    public void setAge(int age) {
+        this.age.set(age);
+    }
+
+    public IntegerProperty ageProperty() {
+        return age;
+    }
+}
