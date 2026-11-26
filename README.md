@@ -37,3 +37,66 @@ For Weeks 2–5, run a launcher from the linked project scripts or follow the gu
 ## Capstone Database Setup
 
 Copy [`.env.example`](./.env.example) to `.env` and set your own `DATABASE_URL` before using the capstone's database features. `.env` is ignored by Git; do not commit real credentials. See the [Week 10 guide](./week10-university-system.md) for details.
+Script Flags
+
+Each weekly script provides the following command-line options:
+
+- "--all" / "-All" — Execute all activities available for the selected week.
+- "--launcher" / "-Launcher" — Start the graphical launcher for Weeks 2–9.
+
+Week 10 Capstone: University Management System
+
+The final project is a JavaFX-based desktop application integrated with a PostgreSQL database hosted on Neon.
+
+Note: Instead of using a locally installed MySQL server, this project uses Neon, a serverless cloud-based PostgreSQL service. This makes database setup easier and allows the application to run without requiring users to install and configure a database locally.
+
+Prerequisites and Environment Configuration
+
+Before running the application, complete the following setup:
+
+1. Visit "neon.tech" (https://neon.tech) and create a free PostgreSQL database.
+2. Copy the database connection string provided by Neon.
+3. In the root directory of the project, duplicate ".env.example" and rename the copy to ".env" (or ".env.local").
+4. Add your Neon database connection string to the "DATABASE_URL" variable:
+
+DATABASE_URL="postgresql://USER:PASSWORD@YOUR-NEON-HOST.neon.tech/neondb?sslmode=require"
+
+Database initialization: The application automatically creates the "programs" and "students" tables and inserts sample program records when it is launched for the first time.
+
+Running and Testing the Application
+
+Start the University Management System
+
+Using Maven:
+
+mvn -f UniversitySystem/pom.xml javafx:run
+
+Alternatively, run it through npm:
+
+npm run start:university
+
+Run the database integration tests
+
+npm run test:university
+
+Executing Individual Java Activities
+
+For convenience, individual Java activities from Weeks 1–5 can also be compiled and executed directly from the project's root directory.
+
+General commands:
+
+javac <folder>/<FileName>.java
+java -cp <folder> <MainClassName>
+
+Example:
+
+javac Week1_Activity/EventDrivenCalculator.java
+java -cp Week1_Activity EventDrivenCalculator
+
+Author and License
+
+Author: Kimberly Cherop
+Email: kimberlycherop321@gmail.com
+
+License: ISC License
+Copyright (c) 2026 Kimberly Cherop.
