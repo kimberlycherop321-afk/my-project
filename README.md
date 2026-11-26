@@ -254,3 +254,56 @@ These files support setup or project-wide commands rather than one specific week
 - [.env.example](./.env.example)
 - [.gitignore](./.gitignore)
 - [package.json](./package.json)
+
+## Script Usage
+
+The Week 2–9 scripts open an interactive menu; choose an activity when prompted. They do not share `--all` or `--launcher` command-line flags. The Week 10 scripts launch the capstone. See the weekly guides for details.
+
+## Week 10 Capstone: University Management System
+
+The capstone is a JavaFX desktop application for managing university students and programs with PostgreSQL. Neon is supported. The app creates its tables and default programs when it first connects; it does not automatically seed student records.
+
+### Database setup
+
+Copy [`.env.example`](./.env.example) to `.env` in the repository root and set your PostgreSQL connection string:
+
+```text
+DATABASE_URL="postgresql://USER:PASSWORD@YOUR-NEON-HOST.neon.tech/neondb?sslmode=require"
+```
+
+Keep the connection string private and do not commit `.env`. For environment variables, testing, and seeding details, see the [Week 10 guide](./week10-university-system.md).
+
+### Run and test
+
+From the repository root, start the app with Maven or npm:
+
+```bash
+mvn -f UniversitySystem/pom.xml javafx:run
+npm run start:university
+```
+
+The database integration test requires a configured database:
+
+```bash
+npm run test:university
+```
+
+Use `npm run seed:university` to add the optional sample students.
+
+## Running Individual Java Activities
+
+Week 1 Java files are at the repository root. For example:
+
+```bash
+javac EventDrivenCalculator.java
+java EventDrivenCalculator
+```
+
+For Weeks 2–5, use the commands and launch scripts in each week's guide. The Week 1 files are not inside a `Week1_Activity` folder.
+
+## Author and License
+
+- **Author:** Kimberly Cherop
+- **Email:** kimberlycherop321@gmail.com
+- **License:** ISC License
+- **Copyright:** (c) 2026 Kimberly Cherop
